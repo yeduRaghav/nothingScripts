@@ -1,0 +1,25 @@
+Authenticated
+--------------------
+curl 'https://stackoverflow.com/users/edit/4127441'
+-H 'accept-encoding: gzip, deflate, br'
+ -H 'accept-language: en-US,en;q=0.9'
+ -H 'upgrade-insecure-requests: 1'
+ -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+ -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+  -H 'referer: https://stackoverflow.com/'
+  -H 'authority: stackoverflow.com'
+  -H 'cookie: prov=6bbc8c4b-7033-6c52-c67d-0da70d2961d6; _ga=GA1.2.248485425.1514423907; _gid=GA1.2.880055312.1514423907; __qca=P0-236979904-1514423907085; __gads=ID=17cf4d7ad4030b1c:T=1514426296:S=ALNI_Ma0eKBzx3Ppj_e5Nw_V7AAX7isPZQ; acct=t=T3R8MhPbhgw%2btuojSMZNEFdmuXEV%2bATM&s=x2o62yblTlJgoBj42IwuMq2t%2fnoz9Tfd'
+  --compressed
+
+
+
+Authentication
+-------------------
+curl 'https://stackoverflow.com/users/login?ssrc=head&returnurl=https%3a%2f%2fstackoverflow.com%2f' -H 'cookie: prov=6bbc8c4b-7033-6c52-c67d-0da70d2961d6; _ga=GA1.2.248485425.1514423907; _gid=GA1.2.880055312.1514423907; __qca=P0-236979904-1514423907085; __gads=ID=17cf4d7ad4030b1c:T=1514426296:S=ALNI_Ma0eKBzx3Ppj_e5Nw_V7AAX7isPZQ; _gat=1; fkey=17ee8973ecb0a3a9636f27702c43ec9f' -H 'origin: https://stackoverflow.com' -H 'accept-encoding: gzip, deflate, br' -H 'accept-language: en-US,en;q=0.9' -H 'upgrade-insecure-requests: 1' -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36' -H 'content-type: application/x-www-form-urlencoded' -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8' -H 'cache-control: max-age=0' -H 'authority: stackoverflow.com' -H 'referer: https://stackoverflow.com/users/login?ssrc=head&returnurl=https%3a%2f%2fstackoverflow.com%2f' --data 'fkey=17ee8973ecb0a3a9636f27702c43ec9f&ssrc=head&email=mailyeduraghav%40gmail.com&password=stack%21nt3Pass&oauth_version=&oauth_server=&openid_username=&openid_identifier=' --compressed
+
+
+Chron task in server
+Login, get request to some pages, wait 5 mins, logout. repeat ever 12 hours.
+Figure out post for loging out.
+Find out authentic
+Save cookie locally.
